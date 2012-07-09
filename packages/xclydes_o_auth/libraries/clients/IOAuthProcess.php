@@ -104,4 +104,5 @@ interface IOAuthProcess{
 	 */
 	public function refreshToken();
 		
+	//TODO Add api method
 }
