@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This package is intended to add OAuth consumer and provider support to any Concrete5 website.
 
 Once installed and configured users may be allowed to used their OAuth enabled accounts
@@ -13,3 +14,7 @@ classes are extensions of the original SDKs made available and have their method
 
 TODO
 * Add the create a suitable pass-through method for accessing the underlying APIs.
+=======
+This file will be updated soon.
+Initial imports to follow.
+>>>>>>> 747455b8c4bf5fb2a28a8a15e1044d4434899bf0
