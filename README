@@ -1,1 +1,15 @@
-This file will be updated soon.
+This package is intended to add OAuth consumer and provider support to any Concrete5 website.
+
+Once installed and configured users may be allowed to used their OAuth enabled accounts
+to signup with your site.
+
+This currently no documentation available, as most options are configurable from the dashboard.
+
+Helper classes are included as part of this package and may be use by developers 
+looking to further use the functionality offered by OAuth.
+
+Currently there is no single method for accessing the underlying network APIS. However the client
+classes are extensions of the original SDKs made available and have their methods available.
+
+TODO
+* Add the create a suitable pass-through method for accessing the underlying APIs.

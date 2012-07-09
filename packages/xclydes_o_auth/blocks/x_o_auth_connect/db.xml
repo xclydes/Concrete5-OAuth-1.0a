@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+
+	<!-- Connect Blocks -->
+	<table name="btxoauthconnect">
+		<desc>Required block table.</desc>
+		<field name="bID" type="I">
+			<descr>The unique ID of the block instance.</descr>
+            <KEY />
+            <UNSIGNED />
+        </field>
+		<field name="defTitle" type="C" size="50">
+			<descr>The title to be used, if so desired.</descr>
+			<DEFAULT value="" />
+        </field>
+		<field name="iconShade" type="C" size="1">
+			<descr>The shade of icons to be used.</descr>
+        </field>
+		<field name="iconSize" type="C" size="1">
+			<descr>The size of icons to be used.</descr>
+        </field>
+		<field name="iconLayout" type="C" size="7">
+			<descr>The layout to be applied to icons.</descr>
+        </field>
+		<field name="handleExisting" type="C" size="1">
+			<descr>The action to take with networks already connected.</descr>
+        </field>
+	</table>
+	<!-- //Connect Blocks -->
+
+</schema>

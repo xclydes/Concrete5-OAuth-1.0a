@@ -1,0 +1,25 @@
+.xoauth a {display:block;padding:0px;margin:10px 2px;line-height:16px;font-size:11px;color:#949494;overflow:hidden;}
+
+/* Twitter */
+.xoauth a.twitter-d-s {background:url("./images/twitter-d-s.png") no-repeat;height:16px;width:16px;}
+.xoauth a.twitter-l-s {background:url("./images/twitter-l-s.png") no-repeat;height:16px;width:16px;}
+.xoauth a.twitter-d-m {background:url("./images/twitter-d-m.png") no-repeat;height:16px;width:136px;}
+.xoauth a.twitter-l-m {background:url("./images/twitter-l-m.png") no-repeat;height:16px;width:136px;}
+.xoauth a.twitter-d-l {background:url("./images/twitter-d-l.png") no-repeat;height:24px;width:151px;}
+.xoauth a.twitter-l-l {background:url("./images/twitter-l-l.png") no-repeat;height:24px;width:151px;}
+
+/* Facebook */
+.xoauth a.facebook-d-s {background:url("./images/fb-d-s.png") no-repeat;height:16px;width:16px;}
+.xoauth a.facebook-l-s {background:url("./images/fb-l-s.png") no-repeat;height:16px;width:16px;}
+.xoauth a.facebook-d-m {background:url("./images/fb-d-m.png") no-repeat;height:21px;width:87px;}
+.xoauth a.facebook-l-m {background:url("./images/fb-l-m.png") no-repeat;height:21px;width:87px;}
+.xoauth a.facebook-d-l {background:url("./images/fb-d-l.png") no-repeat;height:22px;width:154px;}
+.xoauth a.facebook-l-l {background:url("./images/fb-l-l.png") no-repeat;height:22px;width:154px;}
+
+/* Windows Live */
+.xoauth a.winlive-d-s {background:url("./images/winlive-d-s.png") no-repeat;height:16px;width:16px;}
+.xoauth a.winlive-l-s {background:url("./images/winlive-l-s.png") no-repeat;height:16px;width:16px;}
+.xoauth a.winlive-d-m {background:url("./images/winlive-d-m.png") no-repeat;height:36px;width:87px;}
+.xoauth a.winlive-l-m {background:url("./images/winlive-l-m.png") no-repeat;height:36px;width:87px;}
+.xoauth a.winlive-d-l {background:url("./images/winlive-d-l.png") no-repeat;height:31px;width:154px;}
+.xoauth a.winlive-l-l {background:url("./images/winlive-l-l.png") no-repeat;height:31px;width:154px;}

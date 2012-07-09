@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	
+	<!-- Tokens -->
+	<table name="btxoauthtokens">
+		<desc>Stores the details of tokens which have been generated.</desc>
+		<field name="network" type="C" size="20">
+			<descr>The unique ID assigned to the customer.</descr>
+			<NOTNULL />
+			<KEY />
+        </field>
+		<field name="token" type="X">
+			<descr>The key which makes up the token.</descr>
+			<NOTNULL />
+		</field>
+		<field name="secret" type="X">
+			<descr>The secret which makes up the token.</descr>
+			<NOTNULL />
+		</field>
+		<field name="consumer_key" type="X">
+			<descr>The consumer key used for the request, if this site is the provider.</descr>
+		</field>
+		<field name="remote_uID" type="C" size="100">
+			<descr>The user id assigned by the remote network, if any.</descr>
+		</field>
+		<field name="uID" type="I">
+			<descr>The unique ID of the user associate with the token.</descr>
+            <UNSIGNED />
+ 			<NOTNULL />
+       </field>
+		<field name="generated" type="T">
+			<descr>The date and time at which the token was generated.</descr>
+			<DEFTIMESTAMP />
+		</field>
+		<field name="expires" type="T">
+			<descr>The date and time at which the token is set to expire.</descr>
+			<DEFAULT value="0" />
+		</field>
+	</table>
+	<!-- //Tokens -->
+		
+	<!-- RequestsIn -->
+	<table name="btxoauthrequestslocal">
+		<desc>Stores the details of requests which have been made.</desc>
+		<field name="network" type="C" size="20">
+			<descr>The unique ID assigned to the customer.</descr>
+			<NOTNULL />
+			<KEY />
+        </field>
+		<field name="token" type="C" size="255">
+			<descr>The key which makes up the token.</descr>
+			<NOTNULL />
+			<KEY />
+		</field>
+		<field name="secret" type="C" size="255">
+			<descr>The secret which makes up the token.</descr>
+			<NOTNULL />
+			<KEY />
+		</field>
+		<field name="consumer_key" type="C" size="255">
+			<descr>The unique key which makes up the token.</descr>
+			<NOTNULL />
+		</field>
+		<field name="callback_url" type="C" size="255">
+			<descr>The consumer's default callback URL.</descr>
+			<NOTNULL />
+		</field>
+		<field name="status" type="L">
+			<descr>Indication whether or not the customer is active within the system.</descr>
+			<NOTNULL />
+		</field>
+		<field name="generated" type="T">
+			<descr>The date and time at which the token was generated.</descr>
+			<DEFTIMESTAMP />
+		</field>
+		<field name="uID" type="I">
+			<descr>The unique ID of the user who authorized the request.</descr>
+            <UNSIGNED />
+       </field>
+		<field name="verifier" type="C" size="255">
+			<descr>The verifier required for finalizing the request.</descr>
+		</field>
+		<field name="verified" type="T">
+			<descr>The date and time at which the request was verified.</descr>
+		</field>
+	</table>
+	<!-- //RequestsIn -->
+
+	<!-- RequestsOut -->
+	<table name="btxoauthrequestsremote">
+		<desc>Stores the details of requests which have been made.</desc>
+		<field name="network" type="C" size="20">
+			<descr>The unique ID assigned to the customer.</descr>
+			<NOTNULL />
+			<KEY />
+        </field>
+		<field name="token" type="C" size="255">
+			<descr>The key which makes up the token.</descr>
+			<NOTNULL />
+			<KEY />
+		</field>
+		<field name="secret" type="C" size="255">
+			<descr>The secret which makes up the token.</descr>
+			<NOTNULL />
+			<KEY />
+		</field>
+		<field name="callback_url" type="C" size="255">
+			<descr>The consumer's default callback URL.</descr>
+			<NOTNULL />
+		</field>
+		<field name="generated" type="T">
+			<descr>The date and time at which the token was generated.</descr>
+			<DEFTIMESTAMP />
+		</field>
+	</table>
+	<!-- //RequestsOut -->
+	
+	<!-- Consumers -->
+	<table name="btxoauthconsumers">
+		<desc>Stores the details of consumers which have been created.</desc>
+		<field name="consumer_key" type="C" size="255">
+			<descr>The unique key which makes up the token.</descr>
+			<KEY />
+		</field>
+		<field name="consumer_secret" type="C" size="255">
+			<descr>The secret which makes up the token.</descr>
+			<KEY />
+		</field>
+		<field name="uID" type="I">
+			<descr>The unique ID of the user associate with the token.</descr>
+            <UNSIGNED />
+ 			<NOTNULL />
+       </field>
+		<field name="icon_fID" type="I">
+			<descr>The unique ID of this application's image, if any.</descr>
+            <UNSIGNED />
+		</field>
+		<field name="name" type="C" size="255">
+			<descr>The name of the application.</descr>
+			<NOTNULL />
+		</field>
+		<field name="description" type="X">
+			<descr>Notes/comments about the consumer.</descr>
+		</field>
+		<field name="callback_url" type="X">
+			<descr>The consumer's default callback URL.</descr>
+			<NOTNULL />
+		</field>
+		<field name="status" type="L">
+			<descr>Indication whether or not the customer is active within the system.</descr>
+		</field>
+		<field name="generated" type="T">
+			<descr>The date and time at which the token was generated.</descr>
+			<DEFTIMESTAMP />
+		</field>
+	</table>
+	<!-- //Consumers -->
+		
+	<!-- Nonce -->
+	<table name="btxoauthnonce">
+		<field name="nonce" type="C" size="50">
+			<descr>The unique nonce generated.</descr>
+			<NOTNULL />
+		</field>
+		<field name="generated" type="T">
+			<descr>The date and time at which the nonce was generated.</descr>
+			<DEFTIMESTAMP />
+		</field>
+	</table>
+	<!-- //Nonce -->
+
+	<!-- Redirects -->
+	<table name="btxoauthredirect">
+		<field name="hash" type="C" size="100">
+			<descr>The redirect hash generated.</descr>
+			<KEY />
+		</field>
+		<field name="callback_url" type="X">
+			<descr>The callback URL associated with the hash.</descr>
+			<NOTNULL />
+		</field>
+		<field name="generated" type="T">
+			<descr>The date and time at which the hash was generated.</descr>
+			<DEFTIMESTAMP />
+		</field>
+	</table>
+	<!-- //Redirects -->
+	
+</schema>
