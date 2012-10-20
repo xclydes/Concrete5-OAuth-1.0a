@@ -13,9 +13,6 @@ classes are extensions of the original SDKs made available and have their method
 
 TODO
 * Add the create a suitable pass-through method for accessing the underlying APIs.
-=======
-This file will be updated soon.
-Initial imports to follow.
 
 h2. License
 
